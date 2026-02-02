@@ -5,7 +5,7 @@ class GradingSystem {
         var name: String = "Andrew Imanuel Hermawan"
         var score: Int = 80
 
-        println("Nama: " + name + ", nilai: " + score)
+        println("Nama: $name, Nilai: $score")
     }
 
 }
