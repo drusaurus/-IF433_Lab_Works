@@ -15,6 +15,8 @@ fun main() {
 
     weapon.damage = -50
 
+    weapon.damage = 9999
+
     println("Nama Weapon: ${weapon.name}")
     println("Damage: ${weapon.damage}")
     println("Tier: ${weapon.tier}")
