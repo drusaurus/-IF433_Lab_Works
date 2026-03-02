@@ -23,8 +23,6 @@ fun main() {
         println("-----------------")
     }
 
-    fun main() {
-
         val mathHelper = MathHelper()
 
         val luasPersegi = mathHelper.hitungLuas(4)
@@ -35,5 +33,18 @@ fun main() {
 
         val luasLingkaran = mathHelper.hitungLuas(7.0)
         println("Luas Lingkaran: $luasLingkaran")
+
+    val eWallet = EWallet("Andrew", 5000.0)
+    val creditCard = CreditCard("Andrew", 10000.0)
+
+    val paymentList: ArrayList<PaymentMethod> = arrayListOf()
+    paymentList.add(eWallet)
+    paymentList.add(creditCard)
+
+    for (payment in paymentList) {
+        println("Mencoba pembayaran 7500.0 menggunakan ${payment.accountName}")
+        payment.processPayment(7500.0)
+        
+        println("---------------")
     }
 }
