@@ -44,7 +44,13 @@ fun main() {
     for (payment in paymentList) {
         println("Mencoba pembayaran 7500.0 menggunakan ${payment.accountName}")
         payment.processPayment(7500.0)
-        
+
+        if (payment is EWallet) {
+            println("Melakukan top up 5000.0...")
+            payment.topUp(5000.0)
+            println("Mencoba pembayaran lagi 7500.0")
+            payment.processPayment(7500.0)
+        }
         println("---------------")
     }
 }
