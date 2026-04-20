@@ -1,4 +1,4 @@
-package oop_00000114913_AndrewImanuelHermawan.week7
+package oop_00000114913_AndrewImanuelHermawan.week07
 
 class NetworkClient private constructor(val url: String) {
 

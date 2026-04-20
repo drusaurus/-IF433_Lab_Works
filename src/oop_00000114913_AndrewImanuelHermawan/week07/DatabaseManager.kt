@@ -1,4 +1,4 @@
-package oop_00000114913_AndrewImanuelHermawan.week7
+package oop_00000114913_AndrewImanuelHermawan.week07
 
 object DatabaseManager {
     var connectiomStatus: String = "Disconnected"
