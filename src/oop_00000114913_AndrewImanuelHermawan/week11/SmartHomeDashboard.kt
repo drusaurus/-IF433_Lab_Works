@@ -40,4 +40,13 @@ fun main() {
             10
         )
     )
+
+    val searchResult = homeDevices.find {
+        it.category == "Camera"
+    }
+
+    searchResult?.let {
+        println(it.diagnose())
+    }
+
 }
