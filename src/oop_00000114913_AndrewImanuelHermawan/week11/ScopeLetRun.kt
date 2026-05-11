@@ -5,7 +5,7 @@ fun main() {
     val name: String? = "Alexander"
 
     val length = name?.let {
-        println("Nama terdeteksi: $it") 
+        println("Nama terdeteksi: $it")
         it.length
     }
     println("Panjang nama: $length")
