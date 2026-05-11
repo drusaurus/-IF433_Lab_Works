@@ -7,3 +7,7 @@ fun String.addGreeting(): String {
 fun String.repeatTimes(n: Int): String {
     return this.repeat(n)
 }
+
+fun String?.isNUllOrEmptyCustom(): Boolean {
+    return this == null || this.isEmpty()
+}
